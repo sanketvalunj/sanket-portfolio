@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanket Valunj — AI & Full-Stack Developer</title>
+  <meta name="description" content="Sanket Valunj — Computer Engineering student at PICT, Pune. I build real-world solutions using AI and optimisation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <p class="mono loader-label">Loading Experience<span class="dots-anim">...</span></p>
+      <div class="loader-count"><span id="loadNum">0</span><small>%</small></div>
+      <div class="loader-bar"><span id="loadBar"></span></div>
+    </div>
+    <div class="loader-panel lp1"></div><div class="loader-panel lp2"></div>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span>View</span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand" data-go="0"><span class="brand-mark">S</span><span class="brand-text">Sanket<b>.</b></span></a>
+    <nav class="links" id="links">
+      <span class="pill" aria-hidden="true"></span>
+      <a href="#home" data-go="0" class="active">Home</a>
+      <a href="#about" data-go="1">About</a>
+      <a href="#journey" data-go="2">Journey</a>
+      <a href="#stack" data-go="3">Stack</a>
+      <a href="#projects" data-go="4">Projects</a>
+      <a href="#wins" data-go="5">Wins</a>
+      <a href="#contact" data-go="6">Contact</a>
+    </nav>
+    <a class="nav-cta magnetic" href="mailto:sanketvalunj6@gmail.com">Hire me</a>
+  </header>
+
+  <div class="progress"><span id="progress"></span></div>
+
+  <main id="wrap">
+    <div class="track" id="track">
+
+      <!-- ============ 0 · HOME ============ -->
+      <section class="panel hero" id="home" data-theme="dark">
+        <div class="hero-media" id="heroMedia">
+          <img src="assets/hero.jpg" alt="Sanket Valunj" id="heroImg" />
+        </div>
+        <canvas class="hero-particles" id="particles"></canvas>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <p class="hello mono"><span class="status-dot"></span> Available for internships · 2026</p>
+
+          <h1 class="hero-name split" aria-label="Sanket Valunj.">Sanket<br />Valunj<em>.</em></h1>
+
+          <p class="hero-role">
+            <span class="role-static">AI &amp;</span>
+            <span class="role-swap" id="roleSwap"><span>Full-Stack Developer.</span></span>
+          </p>
+
+          <h2 class="hero-line l1">I build real-world solutions using AI and optimisation.</h2>
+          <h2 class="hero-line l2">Bridging research and engineering.</h2>
+
+          <div class="hero-cta">
+            <a href="assets/Sanket_Valunj_Resume.pdf" download class="btn btn-glow magnetic">
+              <span>Download Resume</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+            </a>
+            <a href="#projects" data-go="4" class="btn btn-line magnetic"><span>See my work</span></a>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://github.com/sanketvalunj" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/sanketvalunj/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <!-- terminal -->
+        <div class="terminal" id="terminal">
+          <div class="term-bar">
+            <i></i><i></i><i></i>
+            <span class="mono">sanket@pict: ~</span>
+          </div>
+          <pre class="term-body mono"><span class="t-prompt">➜</span> <span class="t-dir">~</span> <span id="termCmd"></span><span class="t-cursor" id="cmdCursor">▌</span>
+<code id="termOut"></code></pre>
+        </div>
+
+        <div class="scroll-cue mono"><span>Scroll</span><i></i></div>
+      </section>
+
+      <!-- ============ 1 · ABOUT ============ -->
+      <section class="panel" id="about">
+        <div class="panel-in about">
+          <div class="about-left">
+            <p class="kicker mono reveal">01 — About</p>
+            <blockquote class="quote reveal">“The best systems don't just <span class="hl">predict</span>, they <span class="hl">decide</span> and <span class="hl">act</span>.”</blockquote>
+            <p class="body reveal">I'm a third-year Computer Engineering student at <b>PICT, Pune</b> (CGPA 9.27). I like hard, messy, real-world problems: reconstructing cyber attacks as graphs, merging railway maintenance blocks with constraint solvers, and giving farmers advice in their own language.</p>
+            <div class="tag-groups reveal">
+              <div><h4>AI &amp; ML</h4><p>LLMs · RAG · LangGraph · Multi-agent</p></div>
+              <div><h4>Full-Stack</h4><p>FastAPI · Next.js · React · Node</p></div>
+              <div><h4>Optimisation</h4><p>CP-SAT · A* · ALNS · Graphs</p></div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="portrait reveal tilt">
+              <img src="assets/profile.jpg" alt="Sanket portrait" />
+              <span class="portrait-tag mono">Pune, IN 📍</span>
+            </div>
+            <div class="stat-row">
+              <div class="stat reveal"><b data-count="9.27" data-dec="2">0</b><span>CGPA</span></div>
+              <div class="stat reveal"><b data-count="99.2" data-dec="1">0</b><span>CET %ile</span></div>
+              <div class="stat reveal"><b data-count="3" data-dec="0">0</b><span>Hackathon podiums</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true"><div class="marquee-track mono">
+          <span>PYTHON ✦ LLMs ✦ LANGGRAPH ✦ FASTAPI ✦ NEXT.JS ✦ ELASTICSEARCH ✦ CP-SAT ✦ C++ ✦ SIH 2026 ✦ BARCLAYS FINALIST ✦ </span>
+          <span>PYTHON ✦ LLMs ✦ LANGGRAPH ✦ FASTAPI ✦ NEXT.JS ✦ ELASTICSEARCH ✦ CP-SAT ✦ C++ ✦ SIH 2026 ✦ BARCLAYS FINALIST ✦ </span>
+        </div></div>
+      </section>
+
+      <!-- ============ 2 · JOURNEY ============ -->
+      <section class="panel" id="journey">
+        <div class="panel-in">
+          <p class="kicker mono reveal">02 — Journey</p>
+          <h2 class="title reveal">The road <span class="grad">so far</span></h2>
+          <div class="timeline hscroll">
+            <article class="t-card reveal tilt"><span class="t-year mono">2023</span><h3>Army Public School, Dighi</h3><p>10th SSC 95.8% · 12th HSC 81.4%. NCC Cadet Commander: drills, teams, discipline.</p></article>
+            <article class="t-card reveal tilt"><span class="t-year mono">2024</span><h3>Joined PICT</h3><p>B.Tech Computer Engineering after a 99.2 percentile in MHT-CET. Class Representative since semester 1.</p></article>
+            <article class="t-card reveal tilt"><span class="t-year mono">2025</span><h3>TechRush Winner</h3><p>Won PISB TechRush'25 (IEEE PICT), runner-up in Reverse Coding. ML Domain Coordinator at Impetus, Concepts'25.</p></article>
+            <article class="t-card reveal tilt"><span class="t-year mono">2026</span><h3>Barclays Hack-O-Hire</h3><p>Grand Finalist in the 24-hour hackathon. Agri Domain Coordinator &amp; Social Media Head for TechFiesta'26.</p></article>
+            <article class="t-card reveal tilt accent"><span class="t-year mono">Now</span><h3>Building Vajra · SIH 2026</h3><p>AI block planning for Indian Railways, and more multi-agent LLM systems.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3 · STACK ============ -->
+      <section class="panel" id="stack">
+        <div class="panel-in stack">
+          <div class="stack-left">
+            <p class="kicker mono reveal">03 — Stack</p>
+            <h2 class="title reveal">Tools I <span class="grad">think</span> in</h2>
+            <p class="body reveal">Select a technology to see where it fits in my work.</p>
+            <div class="stack-detail reveal" id="stackDetail">
+              <span class="sd-icon" id="sdIcon">Py</span>
+              <div><h3 id="sdName">Python</h3><p id="sdText">My default language for ML pipelines, FastAPI services and optimisation with OR-Tools.</p></div>
+            </div>
+          </div>
+          <div class="stack-grid" id="stackGrid"><!-- filled by JS from STACK data --></div>
+        </div>
+      </section>
+
+      <!-- ============ 4 · PROJECTS ============ -->
+      <section class="panel" id="projects">
+        <div class="panel-in">
+          <p class="kicker mono reveal">04 — Selected Work</p>
+          <h2 class="title reveal">Things I've <span class="grad">built</span></h2>
+          <div class="projects hscroll">
+            <a class="proj reveal" href="https://github.com/sanketvalunj/cryptix" target="_blank" rel="noopener" data-cursor="Code">
+              <div class="proj-cover c1"><svg class="cover-svg" viewBox="0 0 400 220" data-kind="graph"></svg><span class="proj-num mono">01</span></div>
+              <div class="proj-body">
+                <h3>Garud-Drishti <span class="arrow">↗</span></h3>
+                <p>AI cyber incident response: multi-source telemetry, graph-based attack reconstruction, and a multi-agent system (Risk, Compliance, Business Impact) on an air-gapped LLM.</p>
+                <ul class="chips"><li>FastAPI</li><li>Elasticsearch</li><li>NetworkX</li><li>LangGraph</li><li>Next.js</li></ul>
+              </div>
+            </a>
+            <a class="proj reveal" href="https://github.com/sanketvalunj/vajra" target="_blank" rel="noopener" data-cursor="Code">
+              <div class="proj-cover c2"><svg class="cover-svg" viewBox="0 0 400 220" data-kind="rail"></svg><span class="proj-num mono">02</span></div>
+              <div class="proj-body">
+                <h3>Vajra <span class="arrow">↗</span></h3>
+                <p>Block planning for Indian Railways (SIH 2026). CP-SAT cut corridor closures from 3 to 1; Time-Dependent A* rerouting; GNN-guided ALNS for live re-optimisation.</p>
+                <ul class="chips"><li>Python</li><li>OR-Tools</li><li>A*</li><li>ALNS</li><li>React</li></ul>
+              </div>
+            </a>
+            <a class="proj reveal" href="https://github.com/sanketvalunj/NexAI" target="_blank" rel="noopener" data-cursor="Code">
+              <div class="proj-cover c3"><svg class="cover-svg" viewBox="0 0 400 220" data-kind="wave"></svg><span class="proj-num mono">03</span></div>
+              <div class="proj-body">
+                <h3>Nex-AI <span class="arrow">↗</span></h3>
+                <p>Farmer advisory with multilingual voice. Context-aware crop and irrigation advice cut manual effort by 40%, with real-time location and seasonal alerts.</p>
+                <ul class="chips"><li>Python</li><li>FastAPI</li><li>LangChain</li><li>REST</li></ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 5 · WINS ============ -->
+      <section class="panel" id="wins">
+        <div class="panel-in">
+          <p class="kicker mono reveal">05 — Wins &amp; Roles</p>
+          <h2 class="title reveal">Proof of <span class="grad">work</span></h2>
+          <div class="bento">
+            <div class="b b-big reveal tilt"><span class="b-ico">🏆</span><h3>Grand Finalist</h3><p>Barclays Hack-O-Hire'26 · 24-hour hackathon</p></div>
+            <div class="b reveal tilt"><span class="b-ico">🥇</span><h3>Winner</h3><p>PISB TechRush'25 · IEEE PICT</p></div>
+            <div class="b reveal tilt"><span class="b-ico">🥈</span><h3>Runner-up</h3><p>Reverse Coding · IEEE</p></div>
+            <div class="b reveal tilt"><span class="b-ico">⌨️</span><h3>Competitive Programming</h3><p>LeetCode · Codeforces · CodeChef</p></div>
+            <div class="b reveal tilt"><span class="b-ico">🎖️</span><h3>NCC Cadet Commander</h3><p>Led drills and teams</p></div>
+            <div class="b b-wide reveal tilt"><span class="b-ico">🧭</span><h3>Coordinator &amp; CR</h3><p>ML Domain Coordinator (Concepts'25) · Agri Coordinator &amp; Social Media Head (TechFiesta'26) · Class Representative</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6 · CONTACT ============ -->
+      <section class="panel contact" id="contact" data-theme="dark">
+        <div class="contact-glow"></div>
+        <div class="panel-in">
+          <p class="kicker mono reveal">06 — Get in touch</p>
+          <h2 class="mega reveal">Let's build<br /><span class="grad">something real.</span></h2>
+          <div class="contact-row reveal">
+            <a class="c-link magnetic" href="mailto:sanketvalunj6@gmail.com"><small class="mono">Email</small>sanketvalunj6@gmail.com</a>
+            <a class="c-link magnetic" href="https://www.linkedin.com/in/sanketvalunj/" target="_blank" rel="noopener"><small class="mono">LinkedIn</small>/in/sanketvalunj</a>
+            <a class="c-link magnetic" href="https://github.com/sanketvalunj" target="_blank" rel="noopener"><small class="mono">GitHub</small>/sanketvalunj</a>
+          </div>
+          <p class="foot mono">© <span id="year"></span> Sanket Valunj · Designed &amp; built in Pune</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

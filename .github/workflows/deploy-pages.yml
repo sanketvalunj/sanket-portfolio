@@ -30,7 +30,12 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p public
-          rsync -av --exclude='.git' --exclude='.github' ./ public/
+          rsync -av \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='public/' \
+            --exclude='.DS_Store' \
+            ./ public/
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3

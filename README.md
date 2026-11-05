@@ -36,3 +36,5 @@ This site is ready for GitHub Pages and does not require a build step.
 4. Push to `main`; the included workflow will publish the site automatically.
 
 The deployed URL is shown in the workflow run and in **Settings → Pages**. All local links, images, scripts, styles, and the resume use relative paths, so the site also works from a repository subpath such as `https://username.github.io/sanket-portfolio-v2/`.
+
+Do not enter `sanketvalunj-portfolio` or another repository name in the **Custom domain** field. GitHub custom domains must be a domain or subdomain you control, such as `portfolio.example.com`. Leave the field blank when deploying only to `github.io`.

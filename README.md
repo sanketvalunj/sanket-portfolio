@@ -28,5 +28,11 @@ assets/             hero.jpg (home background), profile.jpg, resume PDF
 - Hero photo: replace `assets/hero.jpg` (wide 16:9 image with you on the right works best)
 
 ## Deploy
-Push to GitHub and import into Vercel or Netlify. It's a static site, so no build settings are needed.
-# sanket-portfolio
+This site is ready for GitHub Pages and does not require a build step.
+
+1. Create a GitHub repository and push this folder to its `main` branch.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** as the source.
+4. Push to `main`; the included workflow will publish the site automatically.
+
+The deployed URL is shown in the workflow run and in **Settings → Pages**. All local links, images, scripts, styles, and the resume use relative paths, so the site also works from a repository subpath such as `https://username.github.io/sanket-portfolio-v2/`.
